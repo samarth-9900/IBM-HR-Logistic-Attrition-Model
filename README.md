@@ -32,7 +32,7 @@ This project predicts whether an employee is likely to leave the company using L
 
 ---
 
-## 📊 Final Model Performance
+## Final Model Performance
 
 precision    recall  f1-score   support
 
@@ -45,14 +45,14 @@ precision    recall  f1-score   support
 | **Macro Avg**    | 0.64    | 0.76     | 0.65     | 294     |
 | **Weighted Avg** | 0.87    | 0.77     | 0.80     | 294     |
 
-> ⚠️ Focus: High recall for attrition (class 1) to minimize false negatives.
+Focus: High recall for attrition (class 1) to minimize false negatives.
 
 ---
 
 
 ---
 
-## ✍️ How It Works
+## How It Works
 
 1. Load and preprocess HR attrition dataset
 2. One-hot encode categorical features
@@ -63,7 +63,7 @@ precision    recall  f1-score   support
 
 ---
 
-## 📌 Key Learnings
+## Key Learnings
 
 - Importance of scaling in logistic regression
 - Trade-off between precision and recall

@@ -1,4 +1,4 @@
-# Employee Attrition Prediction (Logistic Regression)
+## Employee Attrition Prediction (Logistic Regression) ##
 
 This project predicts whether an employee is likely to leave the company using Logistic Regression. The model is optimized to maximize **recall for class 1 (attrition cases)**, making it valuable for HR departments aiming to proactively retain employees.
 
@@ -9,7 +9,17 @@ This project predicts whether an employee is likely to leave the company using L
 - **Source:** IBM HR Analytics Employee Attrition & Performance dataset
 - **Link:** https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset/data
 - **Target variable:** `Attrition` (0 = No, 1 = Yes)
-- The Dataset contains many features & imbalanced Attrition data, maks it challenging to maximize the recall
+
+---
+
+## Challenges Faced
+- The Dataset contains many features,proper feature engineering to be done.
+- Many categorical features needed to be encoded properly, and handling them without causing dimensionality issues was challenging.
+- Accuracy was misleading; better metrics were needed.
+- Balancing precision and recall was challenging.
+- imbalanced Attrition data, maks it challenging to maximize the recall.
+- Preventing overfitting while maintaining performance was tricky.
+
 ---
 
 ## Tools & Libraries
@@ -49,9 +59,6 @@ Focus: High recall for attrition (class 1) to minimize false negatives.
 
 ---
 
-
----
-
 ## How It Works
 
 1. Load and preprocess HR attrition dataset
@@ -71,6 +78,7 @@ Focus: High recall for attrition (class 1) to minimize false negatives.
 - Custom thresholding improves minority class detection
 
 ---
+## Files
 - `employee_attrition_logistic.ipynb` – The main Jupyter notebook with data preprocessing, logistic regression model, threshold tuning, and evaluation.
 - `feature_importance.png` – Image showing the logistic regression feature importances.
 - `classification_report.png` – Screenshot of the final classification report.
